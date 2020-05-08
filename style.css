@@ -52,10 +52,6 @@ section {
   margin-bottom: 10px;
 }
 
-section:first-child {
-  /* margin: 0px; */
-}
-
 .layover {
   width: 100%;
   height: 100%;
@@ -73,6 +69,7 @@ section:first-child {
   text-decoration: none;
 }
 
+/* Immagini sfondo */
 #rome {
   background-image: url('img/rome.jpeg');
 }
@@ -85,10 +82,26 @@ section:first-child {
   background-image: url('img/tokyo.jpeg');
 }
 
+/* Hover */
 section:hover .layover {
   background-color: rgba(0, 0, 0, 0);
 }
 
-.text:hover {
+section:hover .text {
   font-style: oblique;
+  left: 65%;
+}
+
+section:hover .prenote {
+  display: block;
+}
+
+/* Prenotazione */
+.prenote {
+  position: absolute;
+  top: 30%;
+  left: 10%;
+  background-color: rgba(255, 255, 255, 0.7);
+  display: none;
+  border-radius: 12px;
 }
